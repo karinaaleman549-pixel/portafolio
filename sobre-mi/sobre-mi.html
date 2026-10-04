@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tania Karina Alemán Díaz, estudiante de Ciencias de la Educación, mención Inglés, en la UNAN-León.">
+<title>Sobre mí | Tania Karina Alemán Díaz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+:root{--soft:#EEF4FB;--card:#FFFFFF;--line:#C3D6EC;--head:#03224F;--text:#56657F;
+--n900:#03224F;--n700:#03224F;--n500:#1A4B91;--teal:#14B8A6;--shadow:0 6px 20px rgba(26,75,145,.12);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+html,body{background:#FFFFFF}
+body{margin:0;background:#FFFFFF;color:var(--text);font:400 14px/1.6 "Poppins",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+main{width:100%;max-width:1280px;margin:0 auto;padding:16px 12px 20px}
+section{width:100%;margin-bottom:28px}
+
+/* PORTADA */
+.hero{display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;margin-bottom:28px;padding:28px 16px;border-radius:20px;background:linear-gradient(180deg,var(--n900),var(--n500));box-shadow:0 6px 16px rgba(3,34,79,.28)}
+.ring{width:clamp(130px,34vw,184px);aspect-ratio:1/1;flex:none;padding:5px;border-radius:50%;background:#FFFFFF;border:1.5px solid var(--line);box-shadow:var(--shadow)}
+.ring img{display:block;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 20%;background:var(--soft)}
+.hero h1{margin:0;color:#fff;font-size:clamp(22px,5vw,34px);font-weight:700;line-height:1.2}
+
+/* TÍTULOS DE SECCIÓN */
+.pill{display:flex;align-items:center;justify-content:center;gap:10px;width:fit-content;max-width:100%;margin:0 auto 16px;padding:12px 26px;border-radius:14px;color:#fff;font-size:16px;font-weight:700;line-height:1.3;background:linear-gradient(180deg,var(--n900),var(--n500));box-shadow:0 6px 16px rgba(3,34,79,.28)}
+.pill svg{width:22px;height:22px;flex:none;color:var(--teal)}
+
+/* TARJETAS */
+.grid{display:grid;gap:14px;align-items:start;grid-template-columns:1fr}
+.grid:has(>:only-child){grid-template-columns:1fr;max-width:420px;margin:0 auto}
+.grid.one{grid-template-columns:1fr;max-width:760px;margin:0 auto}
+.card{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;padding:20px 12px;background:var(--card);border:1.5px solid var(--line);border-radius:20px;box-shadow:var(--shadow)}
+.badge{display:grid;place-items:center}
+.badge img{display:block;width:auto;height:64px;max-width:100%;object-fit:contain}
+.card h3{margin:4px 0 0;color:var(--head);font-size:16px;font-weight:700;line-height:1.35}
+.card p{margin:0;font-size:14px;font-weight:400}
+.chip{display:inline-block;padding:4px 12px;border-radius:999px;background:var(--soft);border:1px solid var(--line);color:var(--head);font-size:14px;font-weight:500}
+.chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0;padding:0;list-style:none}
+.chips .chip{border-radius:16px;line-height:1.45}
+
+/* BOTONES */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;white-space:nowrap;border-radius:12px;font:600 14px/1.2 "Poppins",system-ui,sans-serif;color:#fff;text-decoration:none;background:linear-gradient(180deg,var(--n700),var(--n500));box-shadow:0 4px 12px rgba(26,75,145,.3);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:16px;height:16px}
+.btn:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.up{display:flex;justify-content:center;padding:0 12px calc(24px + env(safe-area-inset-bottom,0px))}
+
+/* TABLET Y ESCRITORIO */
+@media(min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}.hero{flex-direction:row;justify-content:center;gap:32px;text-align:left}}
+@media(min-width:768px){main{padding:24px 20px 28px}}
+@media(min-width:1100px){main{padding:28px 32px 32px}.grid{gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}.btn:hover{transform:none}}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0zM22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></symbol>
+</defs>
+</svg>
+
+<main>
+  <!-- PORTADA -->
+  <header class="hero">
+    <div class="ring"><img src="https://raw.githubusercontent.com/karinaaleman549-pixel/portafolio/main/sobre-mi/foto-perfil.jpg" alt="Retrato de Tania Karina Alemán Díaz" width="184" height="184"></div>
+    <h1>Tania Karina Alemán Díaz</h1>
+  </header>
+
+  <!-- PERFIL -->
+  <section aria-labelledby="t-perfil">
+    <h2 class="pill" id="t-perfil"><svg><use href="#i-user"/></svg>Perfil profesional</h2>
+    <div class="grid one">
+      <article class="card"><p>Estudiante de Ciencias de la Educación, mención Inglés (UNAN-León), interesada en la enseñanza del idioma y en estrategias innovadoras de aprendizaje.</p></article>
+    </div>
+  </section>
+
+  <!-- EDUCACIÓN -->
+  <section aria-labelledby="t-edu">
+    <h2 class="pill" id="t-edu"><svg><use href="#i-cap"/></svg>Educación</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Licenciatura en Ciencias de la Educación, mención Inglés</h3>
+        <div class="badge"><img src="https://karinaaleman549-pixel.github.io/portafolio/certificados/escudo_unan_sin_fondo.png" alt="Logo de la UNAN-León" onerror="this.parentNode.style.display='none'"></div>
+        <p>Universidad Nacional Autónoma de Nicaragua, León (UNAN-León)</p>
+        <span class="chip">2023 – 2027</span>
+        <a class="btn" href="https://karinaaleman549-pixel.github.io/portafolio/sobre-mi/titulo-profesora-ingles-privado.pdf" target="_blank" rel="noopener noreferrer"><svg><use href="#i-link"/></svg>Ver título</a>
+      </article>
+      <article class="card">
+        <h3>Formación complementaria</h3>
+        <div class="badge"><img src="https://karinaaleman549-pixel.github.io/portafolio/certificados/cetec-plus-logo.png" alt="Logo de CETEC-PLUS" onerror="this.parentNode.style.display='none'"></div>
+        <p>CETEC-PLUS</p>
+        <ul class="chips">
+          <li class="chip">Inglés básico</li>
+          <li class="chip">Inglés intermedio</li>
+          <li class="chip">Operador de computadora</li>
+          <li class="chip">Excel avanzado</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section aria-labelledby="t-hab">
+    <h2 class="pill" id="t-hab"><svg><use href="#i-book"/></svg>Habilidades</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Habilidades docentes</h3>
+        <ul class="chips">
+          <li class="chip">Planificación y desarrollo de clases</li>
+          <li class="chip">Diseño de actividades de <i lang="en">listening</i>, <i lang="en">speaking</i>, <i lang="en">reading</i> y <i lang="en">writing</i></li>
+          <li class="chip">Elaboración de materiales didácticos</li>
+          <li class="chip">Estrategias de enseñanza comunicativa</li>
+          <li class="chip">Evaluación del aprendizaje</li>
+          <li class="chip">Liderazgo y coordinación de equipos</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Habilidades de investigación</h3>
+        <ul class="chips">
+          <li class="chip">Investigación cualitativa</li>
+          <li class="chip">Investigación cuantitativa</li>
+          <li class="chip">Redacción y estilo académico (APA)</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- HERRAMIENTAS DIGITALES -->
+  <section aria-labelledby="t-her">
+    <h2 class="pill" id="t-her"><svg><use href="#i-monitor"/></svg>Herramientas digitales</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Materiales didácticos</h3>
+        <div class="badge"><img src="https://raw.githubusercontent.com/karinaaleman549-pixel/portafolio/main/sobre-mi/logo-canva.png" alt="Logo de Canva" width="480" height="449" onerror="this.parentNode.style.display='none'"></div>
+      </article>
+      <article class="card">
+        <h3>Repaso con tarjetas</h3>
+        <div class="badge"><img src="https://raw.githubusercontent.com/karinaaleman549-pixel/portafolio/main/sobre-mi/logo-anki.png" alt="Logo de AnkiDroid" width="480" height="168" onerror="this.parentNode.style.display='none'"></div>
+      </article>
+      <article class="card">
+        <h3>Word, PowerPoint, Outlook y Excel</h3>
+        <div class="badge"><img src="https://raw.githubusercontent.com/karinaaleman549-pixel/portafolio/main/sobre-mi/logo-office.png" alt="Logo de Microsoft Office" width="480" height="298" onerror="this.parentNode.style.display='none'"></div>
+      </article>
+      <article class="card">
+        <h3>Sitios web</h3>
+        <div class="badge"><img src="https://raw.githubusercontent.com/karinaaleman549-pixel/portafolio/main/sobre-mi/logo-google-sites.png" alt="Logo de Google Sites" width="480" height="465" onerror="this.parentNode.style.display='none'"></div>
+      </article>
+    </div>
+  </section>
+</main>
+
+<div class="up"><a class="btn" href="#top" target="_top" id="upBtn"><svg><use href="#i-up"/></svg>Volver arriba</a></div>
+
+<script>
+document.getElementById('upBtn').addEventListener('click',function(e){
+  try{window.top.scrollTo({top:0,behavior:'smooth'});e.preventDefault()}catch(x){}
+  window.scrollTo({top:0,behavior:'smooth'});
+});
+</script>
+</body>
+</html>
