@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Guía técnica de fonética del inglés estadounidense con símbolos IPA, audios y reglas de pronunciación.">
+<title>Guía de fonética del inglés estadounidense · Tania Karina Alemán Díaz</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#03224f;--blue:#1a4b91;--sky:#2f7be0;--soft:#eef4fb;--line:#c3d6ec;--ink:#1e2b45;--mut:#56657f;--teal:#14b8a6;--violet:#7c6cf0;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;height:100%}
+*{box-sizing:border-box;margin:0}
+body{font:400 14px/1.6 'Poppins',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--mut);background:#fff;min-height:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}
+h1,h2,h3{font-size:16px;font-weight:700;line-height:1.4;color:var(--navy)}
+a{color:inherit}
+svg{display:block}
+.wrap{width:100%;max-width:1760px;margin:auto;padding:0 clamp(12px,2.4vw,40px)}
+.sec{padding:14px 0}
+.soft{background:var(--soft)}
+
+/* ===== BANNER EN CÓDIGO ===== */
+.banner{position:relative;overflow:hidden;color:#fff;border-radius:0 0 28px 28px;box-shadow:0 10px 30px rgba(3,34,79,.25);
+ background:radial-gradient(90% 120% at 100% 0%,rgba(124,108,240,.45),transparent 60%),linear-gradient(135deg,var(--navy) 0%,var(--blue) 100%)}
+.bn{position:relative;padding-top:22px;padding-bottom:24px}
+.bt{display:grid;gap:14px;padding-right:100px;justify-items:start}
+.banner h1{color:#fff;font-size:clamp(22px,5.6vw,34px);line-height:1.25;text-shadow:0 2px 10px rgba(3,10,60,.4)}
+.br{display:flex;align-items:center;gap:12px;font-weight:500;color:#dbe8fa}
+.br .dt{font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.ib{display:grid;place-items:center;width:34px;height:34px;flex:none;border-radius:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:#5eead4}
+.ib svg{width:18px;height:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.1);border-radius:99px;padding:6px 14px;font-weight:500}
+.chip.t{background:rgba(20,184,166,.28);border-color:#5eead4}
+.chip.v{background:rgba(124,108,240,.35);border-color:#b3a9ff}
+.deco{position:absolute;right:12px;top:50%;width:92px;height:158px;transform:translateY(-50%) rotate(12deg);border-radius:22px;border:3px solid rgba(255,255,255,.32);background:linear-gradient(160deg,rgba(255,255,255,.2),rgba(255,255,255,.05));box-shadow:0 12px 30px rgba(0,0,0,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;padding:10px}
+.deco .sp{width:30px;height:5px;border-radius:9px;background:rgba(255,255,255,.35)}
+.deco .sy{width:100%;height:42px;border-radius:12px;background:rgba(255,255,255,.14);display:grid;place-items:center;font:700 24px/1 'Poppins','Segoe UI','Noto Sans','DejaVu Sans',sans-serif;color:#9cc2ff}
+.deco .sy+.sy{color:#c4b9ff}
+.deco .wv{display:flex;align-items:center;gap:4px;height:22px}
+.deco .wv i{width:5px;border-radius:9px;background:#5eead4;transform-origin:center;animation:wv 1.1s ease-in-out infinite}
+.deco .wv i:nth-child(1){height:40%}
+.deco .wv i:nth-child(2){height:85%;animation-delay:.15s}
+.deco .wv i:nth-child(3){height:60%;animation-delay:.3s}
+.deco .wv i:nth-child(4){height:100%;animation-delay:.45s}
+.deco .wv i:nth-child(5){height:50%;animation-delay:.6s}
+@keyframes wv{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+
+/* ===== COMPONENTES ===== */
+.pill{display:flex;align-items:center;justify-content:center;gap:10px;width:fit-content;max-width:100%;margin:0 auto 10px;padding:9px 22px;border-radius:14px;color:#fff;font-size:16px;font-weight:700;line-height:1.3;text-align:center;background:linear-gradient(180deg,var(--navy),var(--blue));box-shadow:0 6px 16px rgba(3,34,79,.28)}
+.pill svg{width:22px;height:22px;flex:none;color:var(--teal)}
+.grid{display:grid;gap:12px;align-items:stretch;grid-template-columns:1fr}
+.card{background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:0 6px 20px rgba(26,75,145,.12);text-align:left}
+.card h3{margin-bottom:4px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 18px;text-decoration:none;color:#fff;font:600 14px 'Poppins',sans-serif;border:0;cursor:pointer;border-radius:12px;background:linear-gradient(180deg,var(--navy),var(--blue));box-shadow:0 4px 12px rgba(26,75,145,.3);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:16px;height:16px;flex:none}
+.btn.t{background:var(--teal);color:var(--navy)}
+.btn:focus-visible,.doc:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+
+/* Autora + descripción */
+.intro{display:grid;gap:12px;grid-template-columns:1fr}
+.col{display:flex;flex-direction:column}
+.col .card{flex:1}
+.autora{display:flex;align-items:center;gap:14px}
+.autora img{width:84px;height:84px;flex:none;border-radius:50%;border:4px solid #fff;object-fit:cover;object-position:center 25%;box-shadow:0 10px 28px rgba(3,34,79,.3)}
+.autora .in{display:flex;flex-direction:column;align-items:flex-start;gap:6px;min-width:0}
+.autora h3{margin:0}
+.lead{line-height:1.7}
+
+/* Tarjetas 3D (datos y competencias): inclinación + luz que las recorre */
+.tilt{perspective:900px}
+.cp{position:relative;touch-action:pan-y;-webkit-tap-highlight-color:transparent}
+.ti{position:relative;height:100%;transform-style:preserve-3d;background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:14px 16px;box-shadow:0 8px 22px rgba(26,75,145,.14);text-align:left;transform:rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));animation:idle 7s ease-in-out infinite;will-change:transform}
+.cp:nth-child(2) .ti{animation-delay:-1.8s}
+.cp:nth-child(3) .ti{animation-delay:-3.6s}
+.cp:nth-child(4) .ti{animation-delay:-5.4s}
+@keyframes idle{0%,100%{transform:rotateX(3deg) rotateY(-5deg)}50%{transform:rotateX(-3deg) rotateY(5deg)}}
+.ti.live{animation:none;transition:transform .12s ease-out}
+.fx{position:absolute;inset:0;border-radius:inherit;overflow:hidden;pointer-events:none}
+.sheen{position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(94,234,212,.4) 50%,transparent 60%);transform:translateX(-120%);animation:sheen 5s ease-in-out infinite}
+.cp:nth-child(2) .sheen{animation-delay:1.2s}
+.cp:nth-child(3) .sheen{animation-delay:2.4s}
+.cp:nth-child(4) .sheen{animation-delay:3.6s}
+@keyframes sheen{0%,55%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+.ch{position:relative;display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
+.cic{width:48px;height:48px;flex:none;border-radius:14px;display:grid;place-items:center;color:#5eead4;background:linear-gradient(145deg,var(--navy),var(--blue));box-shadow:0 10px 18px rgba(3,34,79,.35),inset 0 1px 0 rgba(255,255,255,.22);transform:translateZ(36px)}
+.cic svg{width:26px;height:26px}
+.bd{transform:translateZ(22px);font-weight:600;color:#0f766e;background:#e8faf7;border:1px solid #b5ece5;border-radius:99px;padding:2px 12px}
+.ti h3{position:relative;margin:12px 0 0;transform:translateZ(20px)}
+.ti p{position:relative;margin-top:2px;color:var(--mut);transform:translateZ(10px)}
+/* Datos: ícono a la izquierda y texto a la derecha */
+.dato .ti{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center}
+.dato .ch{grid-row:1/3;grid-column:1}
+.dato h3{grid-column:2;margin:0}
+.dato p{grid-column:2;margin:2px 0 0}
+
+/* Módulos */
+.note{border-left:5px solid var(--teal);background:#e8faf7;border-radius:0 16px 16px 0;padding:10px 14px;margin-bottom:10px;color:var(--ink)}
+.note p+p{margin-top:4px;font-weight:600;color:var(--navy)}
+.mod{display:flex;flex-direction:column;gap:10px;padding:12px}
+.mh{display:flex;align-items:center;gap:12px}
+.mh .n{width:32px;height:32px;flex:none;border-radius:10px;background:linear-gradient(180deg,var(--navy),var(--blue));color:#fff;display:grid;place-items:center;font-weight:700}
+.mh h3{margin:0;flex:1;min-width:0}
+.plans{display:grid;gap:8px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+.doc{position:relative;overflow:hidden;width:100%;padding:0;border:0;cursor:pointer;border-radius:12px;font:600 14px 'Poppins',sans-serif;color:#fff;background:linear-gradient(180deg,var(--navy),var(--blue));box-shadow:0 4px 12px rgba(26,75,145,.3);transition:transform .2s,background .2s;--p:0%}
+.doc:hover{transform:translateY(-2px)}
+.doc svg{width:16px;height:16px;flex:none;color:inherit}
+.doc .base,.doc .lay{display:flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:10px 6px;white-space:nowrap}
+.doc .base{position:relative}
+.doc .lay{position:absolute;inset:0;background:linear-gradient(180deg,var(--navy),var(--blue));color:#fff;clip-path:inset(0 100% 0 0);transition:clip-path .3s linear;pointer-events:none}
+.doc.on{background:#fff;color:var(--blue);box-shadow:inset 0 0 0 2px var(--blue)}
+.doc.on .lay{clip-path:inset(0 calc(100% - var(--p)) 0 0)}
+
+/* Conceptos */
+.c b{font-weight:600;background:var(--soft);color:var(--blue);padding:0 6px;border-radius:6px}
+.ex{margin-top:6px;color:var(--mut)}
+
+footer{background:var(--navy);color:#9fb8dd;text-align:center;padding:16px 12px}
+footer p{margin-top:12px}
+
+/* ===== RESPONSIVE: móvil (base) · tableta (600+) · escritorio (900+) · pantalla grande (1100+) ===== */
+@media(min-width:600px){
+ .g-datos{grid-template-columns:repeat(3,1fr)}
+ .g-mod{grid-template-columns:repeat(2,1fr)}
+ .g-mod .mod:last-child{grid-column:1/-1}
+ .g-4{grid-template-columns:repeat(2,1fr)}
+ /* en tableta los datos van en vertical para que el texto respire */
+ .dato .ti{display:block}
+ .dato .ch{margin-bottom:10px}
+}
+@media(min-width:760px){
+ .bn{padding-top:30px;padding-bottom:32px}
+ .bt{padding-right:220px}
+ .deco{right:clamp(24px,2.4vw,40px);width:140px;height:240px;border-radius:30px;gap:14px;padding:16px}
+ .deco .sy{height:62px;font-size:34px}
+ .deco .wv{height:32px}
+ .deco .wv i{width:7px}
+}
+@media(min-width:900px){
+ .sec{padding:24px 0}
+ .intro{grid-template-columns:minmax(340px,440px) 1fr;gap:16px}
+ .grid{gap:16px}
+ .dato .ti{display:grid}
+ .dato .ch{margin-bottom:0}
+ .g-mod{grid-template-columns:repeat(6,1fr)}
+ .g-mod .mod{grid-column:span 2}
+ .g-mod .mod:nth-child(n+4){grid-column:span 3}
+}
+@media(min-width:1100px){
+ .g-4{grid-template-columns:repeat(4,1fr)}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body id="top">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M7 4.5v15a1 1 0 0 0 1.5.86l12.5-7.5a1 1 0 0 0 0-1.72L8.5 3.64A1 1 0 0 0 7 4.5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-lang" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></symbol>
+<symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></symbol>
+<symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12 7-7 7 7"/><path d="M12 19V5"/></symbol>
+<symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+<symbol id="i-wave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 13a2 2 0 0 0 2-2V7a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0V4a2 2 0 0 1 4 0v13a2 2 0 0 0 4 0v-4a2 2 0 0 1 2-2"/></symbol>
+<symbol id="i-ear" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8.5a6.5 6.5 0 1 1 13 0c0 6-6 6-6 10a3.5 3.5 0 1 1-7 0"/><path d="M15 8.5a2.5 2.5 0 0 0-5 0v1a2 2 0 1 1 0 4"/></symbol>
+<symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="7" x="3" y="3" rx="1"/><rect width="9" height="7" x="3" y="14" rx="1"/><rect width="5" height="7" x="16" y="14" rx="1"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"/><path d="M12 14 9.2 11.2a1.9 1.9 0 0 1 2.7-2.7l.1.1.1-.1a1.9 1.9 0 0 1 2.7 2.7z"/></symbol>
+</svg>
+
+<!-- BANNER -->
+<header class="banner">
+  <div class="wrap bn">
+    <div class="bt">
+      <h1>Guía de fonética del inglés estadounidense (IPA)</h1>
+      <div class="br"><i class="ib"><svg aria-hidden="true"><use href="#i-cal"/></svg></i><span class="dt">2023 – Presente</span></div>
+      <div class="br"><i class="ib"><svg aria-hidden="true"><use href="#i-lang"/></svg></i><span>American English Pronunciation</span></div>
+      <div class="chips"><span class="chip t">36 páginas</span><span class="chip v">Recurso educativo</span></div>
+    </div>
+    <div class="deco" aria-hidden="true">
+      <span class="sp"></span>
+      <div class="sy">æ</div>
+      <div class="sy">ʃ</div>
+      <div class="wv"><i></i><i></i><i></i><i></i><i></i></div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- AUTORA Y DESCRIPCIÓN -->
+  <section class="sec"><div class="wrap intro">
+    <div class="col">
+      <h2 class="pill"><svg aria-hidden="true"><use href="#i-user"/></svg>Autora</h2>
+      <div class="card autora">
+        <img src="https://karinaaleman549-pixel.github.io/portafolio/fonetica-project/tania-karina-retrato.jpg" alt="Retrato de Tania Karina Alemán Díaz">
+        <div class="in">
+          <h3>Tania Karina Alemán Díaz</h3>
+          <a class="btn" href="https://karinaaleman549-pixel.github.io/portafolio/fonetica-project/all-american-phonetics-symbols.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-doc"/></svg>Leer guía en PDF</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h2 class="pill"><svg aria-hidden="true"><use href="#i-doc"/></svg>Descripción general</h2>
+      <div class="card"><p class="lead">Esta guía técnica reúne los símbolos del Alfabeto Fonético Internacional (IPA) utilizados en la pronunciación del inglés estadounidense. Incluye vocales, consonantes, diptongos, vocales con /r/ y reglas fonológicas frecuentes, como la aspiración, la Flap T y la Glottal T.</p></div>
+    </div>
+  </div></section>
+
+  <!-- DATOS -->
+  <section class="sec soft"><div class="wrap">
+    <h2 class="pill"><svg aria-hidden="true"><use href="#i-list"/></svg>Datos del recurso</h2>
+    <div class="grid g-datos tilt">
+      <div class="cp dato"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-target"/></svg></span></div><h3>Objetivo</h3><p>Fortalecer la pronunciación y la inteligibilidad oral.</p></div></div>
+      <div class="cp dato"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-doc"/></svg></span></div><h3>Tipo de recurso</h3><p>Guía técnica de referencia sobre pronunciación estadounidense.</p></div></div>
+      <div class="cp dato"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-lang"/></svg></span></div><h3>Idioma</h3><p>Inglés</p></div></div>
+    </div>
+  </div></section>
+
+  <!-- MÓDULOS -->
+  <section class="sec"><div class="wrap">
+    <h2 class="pill"><svg aria-hidden="true"><use href="#i-book"/></svg>Guía general en módulos</h2>
+    <div class="note"><p>Toca los audios para escuchar su contenido. Mientras suenan, cada botón se llena de azul; al terminar aparece una marca ✓ de tarea cumplida.</p><p id="cnt" aria-live="polite">Audios escuchados: 0 de 9</p></div>
+    <div class="grid g-mod">
+      <div class="card mod"><div class="mh"><span class="n">01</span><h3>Vocales largas y cortas del inglés</h3></div><div class="plans">
+        <button type="button" class="doc" data-a="audios/vocales-largas.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Vocales largas</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Vocales largas</span></span></button>
+        <button type="button" class="doc" data-a="audios/vocales-cortas.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Vocales cortas</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Vocales cortas</span></span></button>
+      </div></div>
+      <div class="card mod"><div class="mh"><span class="n">02</span><h3>Diptongos y vocales con /r/ (R-colored vowels)</h3></div><div class="plans">
+        <button type="button" class="doc" data-a="audios/diptongos.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Diptongos</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Diptongos</span></span></button>
+        <button type="button" class="doc" data-a="audios/vocales-con-r.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Vocales con /r/</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Vocales con /r/</span></span></button>
+      </div></div>
+      <div class="card mod"><div class="mh"><span class="n">03</span><h3>Clasificación de consonantes: sonoras y sordas</h3></div><div class="plans">
+        <button type="button" class="doc" data-a="audios/consonantes-sonoras.MP3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Sonoras</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Sonoras</span></span></button>
+        <button type="button" class="doc" data-a="audios/consonantes-no-sonoras.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Sordas</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Sordas</span></span></button>
+      </div></div>
+      <div class="card mod"><div class="mh"><span class="n">04</span><h3>Reglas de pronunciación: aspiración, longitud vocálica (vowel length), Flap T y Glottal T</h3></div><div class="plans">
+        <button type="button" class="doc" data-a="audios/flap-t.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Flap T</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Flap T</span></span></button>
+        <button type="button" class="doc" data-a="audios/glottal-t.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>Glottal T</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>Glottal T</span></span></button>
+      </div></div>
+      <div class="card mod"><div class="mh"><span class="n">05</span><h3>Pronunciación individual de los 27 sonidos consonánticos del inglés estadounidense</h3></div><div class="plans">
+        <button type="button" class="doc" data-a="audios/27-consonantes.mp3"><span class="base"><svg aria-hidden="true"><use href="#i-play"/></svg><span>27 consonantes</span></span><span class="lay" aria-hidden="true"><svg><use href="#i-play"/></svg><span>27 consonantes</span></span></button>
+      </div></div>
+    </div>
+  </div></section>
+
+  <!-- CONCEPTOS -->
+  <section class="sec soft"><div class="wrap">
+    <h2 class="pill"><svg aria-hidden="true"><use href="#i-target"/></svg>Conceptos destacados</h2>
+    <div class="grid g-4">
+      <div class="card c"><h3>Flap T</h3><p>La <b>/t/</b> entre sonidos sonoros se pronuncia como un golpe rápido parecido a una <b>/d/</b>.</p><p class="ex">Water – [<b>ˈwɑɾɚ</b>]</p></div>
+      <div class="card c"><h3>Glottal T</h3><p>La <b>/t/</b> antes de una sílaba débil con <b>/n/</b> puede convertirse en un cierre glotal.</p><p class="ex">Button – [<b>ˈbʌʔn̩</b>]</p></div>
+      <div class="card c"><h3>Dark L</h3><p>La <b>/l/</b> final modifica ligeramente la posición de la vocal anterior.</p><p class="ex">Ejemplos: call, bold…</p></div>
+      <div class="card c"><h3>Aspiración</h3><p>Las consonantes <b>/p, t, k/</b> al inicio de las palabras acentuadas se producen con una fuerte salida de aire.</p><p class="ex">Ejemplos: play, lap…</p></div>
+    </div>
+  </div></section>
+
+  <!-- COMPETENCIAS -->
+  <section class="sec"><div class="wrap">
+    <h2 class="pill"><svg aria-hidden="true"><use href="#i-cap"/></svg>Competencias desarrolladas</h2>
+    <div class="grid g-4 tilt">
+      <div class="cp"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-wave"/></svg></span><span class="bd">Sonidos IPA</span></div><h3>Fonética articulatoria</h3><p>Descripción y producción correcta de los sonidos IPA.</p></div></div>
+      <div class="cp"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-ear"/></svg></span><span class="bd">Reglas fonológicas</span></div><h3>Pronunciación estadounidense</h3><p>Reglas fonológicas y variaciones contextuales.</p></div></div>
+      <div class="cp"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-layout"/></svg></span><span class="bd">36 páginas</span></div><h3>Diseño de material educativo</h3><p>Organización visual de una guía de 36 páginas.</p></div></div>
+      <div class="cp"><div class="ti"><div class="fx"><span class="sheen"></span></div><div class="ch"><span class="cic"><svg aria-hidden="true"><use href="#i-chat"/></svg></span><span class="bd">Inteligibilidad</span></div><h3>Comunicación oral</h3><p>Recurso para mejorar la inteligibilidad y la pronunciación.</p></div></div>
+    </div>
+  </div></section>
+</main>
+
+<footer>
+  <a class="btn t" href="#top" target="_top" id="upBtn"><svg aria-hidden="true"><use href="#i-up"/></svg>Volver arriba</a>
+  <p>Guía de fonética del inglés estadounidense · Tania Karina Alemán Díaz</p>
+</footer>
+
+<script>
+(function(){
+  var base='https://karinaaleman549-pixel.github.io/portafolio/fonetica-project/',cur=null;
+  var bts=document.querySelectorAll('.doc[data-a]'),cnt=document.getElementById('cnt');
+
+  /* Audios: el botón se llena de azul mientras suena y queda con ✓ al terminar */
+  function icon(b,id){b.querySelectorAll('use').forEach(function(u){u.setAttribute('href','#'+id)})}
+  function prog(b,p){b.style.setProperty('--p',p+'%')}
+  function count(){var n=document.querySelectorAll('.doc.done').length;cnt.textContent='Audios escuchados: '+n+' de '+bts.length}
+  function idle(b){b.classList.remove('on','done');prog(b,0);icon(b,'i-play');if(b._a){b._a.pause();b._a.currentTime=0}count()}
+  function make(b){
+    var a=new Audio(base+b.dataset.a);b._a=a;
+    a.addEventListener('timeupdate',function(){if(a.duration)prog(b,a.currentTime/a.duration*100)});
+    a.addEventListener('ended',function(){prog(b,100);b.classList.remove('on');b.classList.add('done');icon(b,'i-check');count()});
+    a.addEventListener('error',function(){
+      var nombre=b.querySelector('.base span').textContent;
+      idle(b);b._a=null;
+      cnt.textContent='No se pudo cargar el audio «'+nombre+'». Revisa tu conexión e inténtalo de nuevo.';
+    });
+    return a}
+  bts.forEach(function(b){
+    b.addEventListener('click',function(){
+      var a=b._a||make(b);
+      if(cur===b&&!a.paused){a.pause();icon(b,'i-play');return}
+      if(cur&&cur!==b){var o=cur;if(!o.classList.contains('done'))idle(o);else o._a.pause()}
+      if(b.classList.contains('done')||a.ended){a.currentTime=0;prog(b,0)}
+      cur=b;b.classList.remove('done');b.classList.add('on');icon(b,'i-pause');count();
+      a.play().catch(function(){idle(b)});
+    });
+  });
+
+  /* Tarjetas 3D: se inclinan hacia donde se toca o se apunta */
+  document.querySelectorAll('.cp').forEach(function(c){
+    var t=c.querySelector('.ti');
+    function mv(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+      t.style.setProperty('--ry',((x-.5)*16)+'deg');t.style.setProperty('--rx',((.5-y)*12)+'deg');t.classList.add('live')}
+    function out(){t.classList.remove('live');t.style.removeProperty('--rx');t.style.removeProperty('--ry')}
+    c.addEventListener('pointerdown',mv);c.addEventListener('pointermove',mv);
+    ['pointerup','pointerleave','pointercancel'].forEach(function(n){c.addEventListener(n,out)});
+  });
+
+  document.getElementById('upBtn').addEventListener('click',function(e){
+    try{window.top.scrollTo({top:0,behavior:'smooth'});e.preventDefault()}catch(x){}
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
