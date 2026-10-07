@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es" class="p-anki">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistema de aprendizaje con AnkiDroid | Tania Karina Alemán Díaz</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("sn-js")</script>
+<meta name="theme-color" content="#03224F">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="description" content="Sistema de aprendizaje de inglés con AnkiDroid: flashcards con repetición espaciada organizadas de A1 a C1.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Tania Karina Alemán Díaz · Portafolio">
+<meta property="og:locale" content="es_LA">
+<meta property="og:title" content="Sistema de aprendizaje con AnkiDroid | Tania Karina Alemán Díaz">
+<meta property="og:description" content="Sistema de aprendizaje de inglés con AnkiDroid: flashcards con repetición espaciada organizadas de A1 a C1.">
+<meta property="og:image" content="og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Tania Karina Alemán Díaz, docente de inglés">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sistema de aprendizaje con AnkiDroid | Tania Karina Alemán Díaz">
+<meta name="twitter:description" content="Sistema de aprendizaje de inglés con AnkiDroid: flashcards con repetición espaciada organizadas de A1 a C1.">
+<meta name="twitter:image" content="og-image.jpg">
+</head>
+<body>
+<header class="sn"><div class="sn-in"><a class="sn-brand" href="index.html">Karina Alemán</a><span class="sn-label">Menú Principal</span><div class="sn-links" id="sn-links" role="navigation" aria-label="Secciones del portafolio"><a href="index.html">Inicio</a><a href="sobre-mi.html">Sobre mí</a><a href="formacion.html">Formación</a><a href="practicas.html">Prácticas</a><a href="proyectos.html" aria-current="page">Proyectos</a><a href="contacto.html">Contacto</a></div><a class="sn-lang" href="en-anki.html" hreflang="en" lang="en" aria-label="Read this page in English">EN</a><button class="sn-burger" id="sn-burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="sn-drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button></div><div class="sn-prog" id="sn-prog" aria-hidden="true"><i></i></div></header>
+<div class="sn-ov" id="sn-ov"></div>
+<aside class="sn-drawer" id="sn-drawer" aria-hidden="true" aria-label="Menú principal"><div class="sn-dh"><img src="foto-menu.jpg" alt="" width="48" height="48"><div><b>Tania Karina Alemán Díaz</b><small>Docente de inglés</small></div><button class="sn-x" id="sn-close" type="button" aria-label="Cerrar menú"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div><div class="sn-d" role="navigation" aria-label="Secciones"><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Inicio</a><a href="sobre-mi.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Sobre mí</a><a href="formacion.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M22 10v6"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>Formación</a><a href="practicas.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4M12 16h4M8 11h.01M8 16h.01"/></svg>Prácticas</a><a href="proyectos.html" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>Proyectos</a><a href="contacto.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Contacto</a><a class="sn-dl" href="en-anki.html" hreflang="en" lang="en"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>English</a></div></aside>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="sym">
+<symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="m9 11 3 3L22 4"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+<symbol id="i-image" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></symbol>
+<symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"/><rect x="2" y="6" width="14" height="12" rx="2"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="i-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+<symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.48 12.89 17 22l-5-3-5 3 1.52-9.11"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+<symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" x2="15" y1="20" y2="20"/><line x1="12" x2="12" y1="4" y2="20"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></symbol>
+<symbol id="i-volume" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></symbol>
+<symbol id="i-archive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="5" x="2" y="3" rx="1"/><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8"/><path d="M10 12h4"/></symbol>
+<symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
+<symbol id="i-library" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 6 4 14"/><path d="M12 6v14"/><path d="M8 8v12"/><path d="M4 4v16"/></symbol>
+<symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.92a1 1 0 0 0-.02-1.84L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.83l8.57 3.91a2 2 0 0 0 1.66 0zM22 10v6M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></symbol>
+<symbol id="i-repeat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m17 2 4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="m7 22-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+<symbol id="i-hourglass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14"/><path d="M5 2h14"/><path d="M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22"/><path d="M7 2v4.172a2 2 0 0 0 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></symbol>
+<symbol id="i-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></symbol>
+<symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></symbol>
+<symbol id="i-brain" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"/><path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"/><path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"/><path d="M17.599 6.5a3 3 0 0 0 .399-1.375"/><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"/><path d="M3.477 10.896a4 4 0 0 1 .585-.396"/><path d="M19.938 10.5a4 4 0 0 1 .585.396"/><path d="M6 18a4 4 0 0 1-1.967-.516"/><path d="M19.967 17.484A4 4 0 0 1 18 18"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+<symbol id="i-playsolid" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="14" y="4" width="4" height="16" rx="1"/><rect x="6" y="4" width="4" height="16" rx="1"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="6 3 20 12 6 21 6 3"/></symbol>
+<symbol id="i-prev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+<symbol id="i-next" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 56 28" fill="none"><circle cx="3" cy="14" r="3" fill="#14B8A6"/><path d="M6 14h40" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4"/><path d="M40 7l8 7-8 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</g>
+</defs>
+</svg>
+
+<main>
+  <!-- PORTADA (reconstruida en código) -->
+  <header class="hero">
+    <div class="hero-body">
+      <h1><span>Sistema de aprendizaje de inglés</span><span>con AnkiDroid</span></h1>
+      <ul class="hero-info">
+        <li><span class="ib"><svg><use href="#i-calendar"/></svg></span><span class="when">2023 – Presente</span></li>
+        <li><span class="ib"><svg><use href="#i-brain"/></svg></span><span class="what">Aprendizaje autodidáctico y neuroeducación</span></li>
+      </ul>
+    </div>
+    <svg class="phone" viewBox="0 0 160 300" aria-hidden="true" focusable="false">
+      <rect x="8" y="8" width="144" height="284" rx="30" fill="rgba(255,255,255,.10)" stroke="rgba(255,255,255,.38)" stroke-width="4"/>
+      <rect x="18" y="18" width="124" height="264" rx="22" fill="rgba(255,255,255,.16)"/>
+      <rect x="52" y="22" width="56" height="14" rx="7" fill="rgba(3,34,79,.45)"/>
+      <polygon class="st st1" points="56.6,86.6 67.1,100.6 84.5,99.0 74.4,113.3 81.3,129.4 64.6,124.2 51.4,135.8 51.2,118.2 36.1,109.3 52.7,103.6" fill="#7F9EDA" stroke="#7F9EDA" stroke-width="9" stroke-linejoin="round"/>
+      <polygon class="st st2" points="93.9,162.5 99.7,184.7 121.7,191.3 102.4,203.7 102.9,226.6 85.2,212.1 63.5,219.6 71.8,198.3 58.0,180.0 80.8,181.3" fill="#7F9EDA" stroke="#7F9EDA" stroke-width="10" stroke-linejoin="round"/>
+    </svg>
+  </header>
+
+  <!-- AUTORA -->
+  <div class="author">
+    <div class="ring"><img src="anki-project/foto-perfil.jpg" alt="Retrato de Karina Alemán, autora del proyecto" width="180" height="180"></div>
+    <span class="tag">Autora</span>
+  </div>
+
+  <!-- OBJETIVO GENERAL -->
+  <section aria-labelledby="t-obj">
+    <h2 class="pill" id="t-obj"><svg><use href="#i-target"/></svg>Objetivo general</h2>
+    <div class="grid one">
+      <article class="card">
+        <div class="badge"><img src="sobre-mi/logo-anki.png" alt="Logo de AnkiDroid" onerror="this.parentNode.style.display='none'"></div>
+        <p>Diseñar e implementar un sistema de flashcards en AnkiDroid basado en <strong>repetición espaciada (SRS)</strong>, para fortalecer progresivamente las habilidades lingüísticas del inglés.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS ESPECÍFICOS -->
+  <section aria-labelledby="t-esp">
+    <h2 class="pill" id="t-esp"><svg><use href="#i-check"/></svg>Objetivos específicos</h2>
+    <p class="lead">Cuatro pilares que sostienen el sistema.</p>
+    <div class="grid">
+      <article class="card"><span class="ib"><svg><use href="#i-folder"/></svg></span><h3>Organizar contenidos</h3><p>Clasificación desde nivel A1 hasta C1.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-layers"/></svg></span><h3>Integrar habilidades</h3><p>Gramática, vocabulario, pronunciación y fonética.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-bulb"/></svg></span><h3>Favorecer la memoria</h3><p>Recuperación activa y retención a largo plazo.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-target"/></svg></span><h3>Estudio autónomo</h3><p>Aprendizaje progresivo y personalizado.</p></article>
+    </div>
+  </section>
+
+  <!-- ORGANIZACIÓN DEL SISTEMA -->
+  <section aria-labelledby="t-org">
+    <h2 class="pill" id="t-org"><svg><use href="#i-layers"/></svg>Organización del sistema</h2>
+    <p class="lead">Contenido distribuido por nivel del Marco Común Europeo.</p>
+    <ul class="chips levels" style="margin-bottom:18px" aria-label="Niveles">
+      <li class="chip">A1</li><li class="chip">A2</li><li class="chip">B1</li><li class="chip">B2</li><li class="chip">C1</li>
+    </ul>
+    <div class="grid">
+      <article class="card"><span class="ib"><svg><use href="#i-book"/></svg></span><h3>Gramática</h3><p>Tiempos verbales, conectores y estructuras.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-type"/></svg></span><h3>Vocabulario</h3><p>Por tema, frecuencia y contexto de uso.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-mic"/></svg></span><h3>Fonética</h3><p>Símbolos y sonidos del inglés estadounidense.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-volume"/></svg></span><h3>Pronunciación</h3><p>Práctica de sonidos en contexto real.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-quote"/></svg></span><h3>Phrasal verbs</h3><p>Significado y uso con ejemplos.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-archive"/></svg></span><h3>Otros mazos</h3><p>Expresiones y contenido complementario.</p></article>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE EVIDENCIAS (CARRUSEL) -->
+  <section aria-labelledby="t-gal">
+    <h2 class="pill" id="t-gal"><svg><use href="#i-image"/></svg>Galería de evidencias</h2>
+    <p class="lead">Estadísticas reales de uso del sistema en AnkiDroid.</p>
+    <div class="carousel" id="carousel" role="region" aria-roledescription="carrusel" aria-label="Evidencias de uso de AnkiDroid" tabindex="0">
+      <div class="viewport">
+        <div class="track" id="track">
+          <figure class="slide"><img src="anki-project/evidencia-01.png" alt="Evidencia 1 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-02.png" alt="Evidencia 2 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-03.png" alt="Evidencia 3 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-04.png" alt="Evidencia 4 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-05.png" alt="Evidencia 5 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-06.png" alt="Evidencia 6 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+          <figure class="slide"><img src="anki-project/evidencia-07.png" alt="Evidencia 7 de 7: estadísticas de uso en AnkiDroid" decoding="async"></figure>
+        </div>
+        <button class="nav prev" type="button" id="prev" aria-label="Evidencia anterior"><svg><use href="#i-prev"/></svg></button>
+        <button class="nav next" type="button" id="next" aria-label="Evidencia siguiente"><svg><use href="#i-next"/></svg></button>
+        <div class="cprog" aria-hidden="true"><i id="cbar"></i></div>
+      </div>
+      <div class="dots" id="dots"></div>
+      <div class="ctrl">
+        <button class="btn ghost small" type="button" id="cplay" aria-label="Pausar el avance automático"><svg><use id="cplayicon" href="#i-pause"/></svg><span id="cplaytxt">Pausar</span></button>
+        <span class="chip count" id="count">1 / 7</span>
+      </div>
+      <p class="cnote" id="cnote">Las evidencias avanzan solas. Pausa el carrusel si quieres apreciar los detalles con calma.</p>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section aria-labelledby="t-vid">
+    <h2 class="pill" id="t-vid"><svg><use href="#i-video"/></svg>Video explicativo</h2>
+    <p class="lead">Recorrido guiado por el sistema completo.</p>
+    <div class="video" id="video">
+      <a class="vthumb" id="vthumb" href="https://youtu.be/WF4PxqT45sQ" target="_blank" rel="noopener noreferrer" aria-label="Reproducir el video «Aprende Inglés Con AnkiDroid»">
+        <img src="https://i.ytimg.com/vi/WF4PxqT45sQ/hqdefault.jpg" alt="Miniatura del video «Aprende Inglés Con AnkiDroid»" loading="lazy">
+        <span class="vplay" aria-hidden="true"><svg><use href="#i-playsolid"/></svg></span>
+      </a>
+    </div>
+    <p class="cnote" id="vnote" hidden></p>
+    <div class="video-alt"><a class="btn" href="https://youtu.be/WF4PxqT45sQ" target="_blank" rel="noopener noreferrer"><svg><use href="#i-link"/></svg>Mirar el video en YouTube</a></div>
+  </section>
+
+  <!-- INVESTIGACIÓN APLICADA -->
+  <section aria-labelledby="t-inv">
+    <h2 class="pill" id="t-inv"><svg><use href="#i-search"/></svg>Investigación aplicada</h2>
+    <p class="lead">De la teoría en neuroeducación a una herramienta real. Cada concepto es un vértice y cada relación, una arista con dirección: toca o arrastra los nodos para explorar el grafo.</p>
+    <div class="graph-wrap">
+      <ul class="chips" id="gstats" aria-label="Propiedades del grafo"></ul>
+      <div class="gcanvas" id="gcanvas"><svg id="gsvg" role="group" aria-label="Grafo dirigido de 8 vértices que relaciona la neuroeducación con el sistema de estudio en AnkiDroid"></svg></div>
+      <div class="glegend" aria-hidden="true"><span><i class="dot a"></i>Concepto</span><span><i class="dot b"></i>Aplicación en Anki</span><span><i class="dash"></i>Ciclo</span></div>
+      <div class="gtools">
+        <button class="btn ghost" type="button" id="gcycle" aria-pressed="false">Resaltar ciclo</button>
+        <button class="btn ghost" type="button" id="greset">Reacomodar nodos</button>
+      </div>
+      <div class="in-panel" id="gpanel" aria-live="polite"></div>
+      <details class="matrix">
+        <summary class="btn ghost">Ver matriz de adyacencia</summary>
+        <div class="mx-scroll" id="gmatrix"></div>
+        <ol class="mx-legend" id="gnames"></ol>
+      </details>
+    </div>
+  </section>
+
+  <!-- IMPACTO DEL PROYECTO -->
+  <section aria-labelledby="t-imp">
+    <h2 class="pill" id="t-imp"><svg><use href="#i-trend"/></svg>Impacto del proyecto</h2>
+    <p class="lead">Lo que este sistema representa en cifras y práctica.</p>
+    <div class="grid">
+      <article class="card"><span class="ib"><svg><use href="#i-calendar"/></svg></span><h3>Desarrollo continuo</h3><p>Actualizado desde 2023 hasta la actualidad.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-trend"/></svg></span><h3>Organización progresiva</h3><p>Contenido distribuido de A1 a C1.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-library"/></svg></span><h3>Recurso educativo propio</h3><p>Materiales digitales creados desde cero.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-bulb"/></svg></span><h3>Aplicación permanente</h3><p>Apoyo activo a mi formación docente.</p></article>
+    </div>
+  </section>
+
+  <!-- COMPETENCIAS DESARROLLADAS -->
+  <section aria-labelledby="t-comp">
+    <h2 class="pill" id="t-comp"><svg><use href="#i-award"/></svg>Competencias desarrolladas</h2>
+    <p class="lead">Habilidades fortalecidas a lo largo del proyecto.</p>
+    <div class="grid">
+      <article class="card"><span class="ib"><svg><use href="#i-monitor"/></svg></span><h3>Competencia digital docente</h3><p>Diseño y uso de recursos educativos digitales.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-folder"/></svg></span><h3>Diseño instruccional</h3><p>Organización progresiva del aprendizaje.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-bulb"/></svg></span><h3>Neuroeducación aplicada</h3><p>Estrategias respaldadas en principios cognitivos.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-library"/></svg></span><h3>Materiales didácticos</h3><p>Construcción de recursos propios.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-cap"/></svg></span><h3>Aprendizaje autónomo</h3><p>Planificación de un estudio continuo.</p></article>
+      <article class="card"><span class="ib"><svg><use href="#i-archive"/></svg></span><h3>Organización académica</h3><p>Clasificación por nivel y habilidad.</p></article>
+    </div>
+  </section>
+
+  <!-- REFLEXIÓN PROFESIONAL -->
+  <section aria-labelledby="t-ref">
+    <h2 class="pill" id="t-ref"><svg><use href="#i-quote"/></svg>Reflexión profesional</h2>
+    <div class="grid one">
+      <blockquote class="card quote">
+        <p>El sistema forma parte de mi <span class="hl">formación</span>; posee una estructura organizada para promover el aprendizaje autónomo del inglés.</p>
+      </blockquote>
+    </div>
+  </section>
+</main>
+<div class="sn-more"><div class="sn-more-in"><a class="sn-all" href="proyectos.html"><small>Volver</small><strong>Todos los proyectos</strong></a><a class="sn-next" href="fonetica.html"><small>Siguiente</small><strong>Guía de fonética del inglés estadounidense</strong></a></div></div>
+
+
+<script>
+(function(){
+  var g=function(id){return document.getElementById(id)};
+  var carousel=g('carousel'),track=g('track'),slides=track.children,total=slides.length,dots=g('dots'),
+      count=g('count'),bar=g('cbar'),btn=g('cplay'),icon=g('cplayicon'),txt=g('cplaytxt'),note=g('cnote'),
+      INTERVAL=3000,idx=0,userPaused=false,hoverPause=false,hiddenTab=false,offscreen=false,i,b;
+  var NOTE_PLAY='Las evidencias avanzan solas. Pausa el carrusel si quieres apreciar los detalles con calma.';
+  var NOTE_PAUSE='Carrusel en pausa. Pulsa «Reanudar» para que vuelva a avanzar solo.';
+  bar.style.setProperty('--ci',INTERVAL+'ms');
+  for(i=0;i<total;i++){
+    b=document.createElement('button');b.type='button';b.className='dot';
+    b.setAttribute('aria-label','Ir a la evidencia '+(i+1));
+    (function(n){b.addEventListener('click',function(){go(n)})})(i);
+    dots.appendChild(b);
+  }
+  function running(){return !userPaused&&!hoverPause&&!hiddenTab&&!offscreen}
+  function sync(){
+    bar.classList.toggle('hold',!running());
+    bar.parentNode.classList.toggle('off',userPaused);
+    track.setAttribute('aria-live',userPaused?'polite':'off');
+  }
+  function restart(){
+    bar.classList.remove('run');void bar.offsetWidth;
+    if(!userPaused)bar.classList.add('run');
+    sync();
+  }
+  function go(n){
+    idx=(n+total)%total;
+    track.style.transform='translateX(-'+(idx*100)+'%)';
+    for(var k=0;k<total;k++){
+      dots.children[k].setAttribute('aria-current',k===idx?'true':'false');
+      slides[k].setAttribute('aria-hidden',k===idx?'false':'true');
+    }
+    count.textContent=(idx+1)+' / '+total;
+    restart();
+  }
+  function setPaused(p,msg){
+    userPaused=p;
+    txt.textContent=p?'Reanudar':'Pausar';
+    icon.setAttribute('href',p?'#i-play':'#i-pause');
+    btn.setAttribute('aria-label',p?'Reanudar el avance automático':'Pausar el avance automático');
+    note.textContent=p?(msg||NOTE_PAUSE):NOTE_PLAY;
+    restart();
+  }
+  bar.addEventListener('animationend',function(){go(idx+1)});
+  btn.addEventListener('click',function(){setPaused(!userPaused)});
+  g('prev').addEventListener('click',function(){go(idx-1)});
+  g('next').addEventListener('click',function(){go(idx+1)});
+  carousel.addEventListener('keydown',function(e){
+    if(e.key==='ArrowLeft'){go(idx-1)}else if(e.key==='ArrowRight'){go(idx+1)}
+  });
+  /* se detiene solo mientras miras el contenido: cursor encima, foco o dedo tocando */
+  carousel.addEventListener('pointerenter',function(e){if(e.pointerType==='mouse'){hoverPause=true;sync()}});
+  carousel.addEventListener('pointerleave',function(e){if(e.pointerType==='mouse'){hoverPause=false;sync()}});
+  carousel.addEventListener('focusin',function(e){if(e.target.matches&&e.target.matches(':focus-visible')){hoverPause=true;sync()}});
+  carousel.addEventListener('focusout',function(e){if(!carousel.contains(e.relatedTarget)){hoverPause=false;sync()}});
+  var x0=null;
+  carousel.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;hoverPause=true;sync()},{passive:true});
+  carousel.addEventListener('touchend',function(e){
+    hoverPause=false;
+    if(x0!==null){
+      var dx=e.changedTouches[0].clientX-x0;x0=null;
+      if(Math.abs(dx)>40){go(idx+(dx<0?1:-1));return}
+    }
+    restart();
+  });
+  document.addEventListener('visibilitychange',function(){hiddenTab=document.hidden;sync()});
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(en){offscreen=!en[0].isIntersecting;sync()},{threshold:.25}).observe(carousel);
+  }
+  go(0);
+})();
+
+(function(){
+  var NS='http://www.w3.org/2000/svg',R=26;
+  /* ===== DATOS DEL GRAFO (edítalos aquí) =====
+     t: 'a' concepto · 'b' aplicación en Anki · ic: ícono · sh: nombre corto bajo el nodo */
+  var N=[
+    {id:1,t:'a',ic:'bulb',name:'Técnicas neuroeducativas',sh:'Neuroeducación',d:'Estrategias basadas en cómo el cerebro aprende y recuerda.'},
+    {id:2,t:'a',ic:'cap',name:'Aprendizaje autodidáctico',sh:'Autodidáctico',d:'Estudiar de forma independiente, con objetivos y ritmo propios.'},
+    {id:3,t:'a',ic:'hourglass',name:'Retención a largo plazo',sh:'Retención',d:'Que lo aprendido siga disponible semanas y meses después.'},
+    {id:4,t:'a',ic:'zap',name:'Motivación y continuidad',sh:'Motivación',d:'Mantener el hábito de estudio día tras día.'},
+    {id:5,t:'b',ic:'repeat',name:'Repetición espaciada y recuperación activa',sh:'Repetición espaciada',d:'Repasar a intervalos crecientes y tratar de recordar la respuesta antes de verla.'},
+    {id:6,t:'b',ic:'compass',name:'Sistema para estudio independiente',sh:'Estudio independiente',d:'Mazos organizados por nivel para estudiar sin depender de una clase.'},
+    {id:7,t:'b',ic:'refresh',name:'Repasos automáticos por algoritmo',sh:'Repasos automáticos',d:'AnkiDroid programa cada repaso según qué tan bien recordaste la tarjeta.'},
+    {id:8,t:'b',ic:'trend',name:'Uso constante y progresión del contenido',sh:'Uso constante',d:'Ver el avance y subir de nivel ayuda a mantener el hábito de estudio.'}
+  ];
+  /* aristas dirigidas: [origen, destino, relación] */
+  var E=[
+    [1,5,'aplicación'],[2,6,'concreción'],[3,7,'mecanismo'],[4,8,'manifestación'],
+    [5,3,'efecto'],[7,6,'soporte'],[6,8,'impulso'],[8,3,'refuerzo']
+  ];
+  var LAY={
+    wide:{w:800,h:400,p:{1:[70,100],5:[235,100],3:[400,100],7:[565,100],6:[565,300],8:[400,300],4:[235,300],2:[730,300]}},
+    narrow:{w:360,h:500,lab:{6:-1},p:{1:[70,60],5:[180,60],3:[180,190],7:[290,190],6:[290,320],8:[180,320],4:[70,320],2:[180,450]}}
+  };
+
+  var $=function(id){return document.getElementById(id)};
+  var svg=$('gsvg'),box=$('gcanvas'),panel=$('gpanel'),btnC=$('gcycle'),btnR=$('greset');
+  var by={};N.forEach(function(n){by[n.id]=n});
+
+  /* ----- análisis del grafo ----- */
+  var reach={};N.forEach(function(a){reach[a.id]={};reach[a.id][a.id]=true});
+  E.forEach(function(e){reach[e[0]][e[1]]=true});
+  N.forEach(function(k){N.forEach(function(i){N.forEach(function(j){
+    if(reach[i.id][k.id]&&reach[k.id][j.id])reach[i.id][j.id]=true})})});
+  var comp={},sccs=[];
+  N.forEach(function(a){
+    if(comp[a.id]!==undefined)return;
+    var g=N.filter(function(b){return reach[a.id][b.id]&&reach[b.id][a.id]}).map(function(b){return b.id});
+    g.forEach(function(x){comp[x]=sccs.length});sccs.push(g);
+  });
+  var cycles=sccs.filter(function(g){return g.length>1});
+  var inCyc={},cycEdge={};
+  cycles.forEach(function(g){g.forEach(function(x){inCyc[x]=1})});
+  E.forEach(function(e,i){if(inCyc[e[0]]&&comp[e[0]]===comp[e[1]])cycEdge[i]=1});
+  var par={};N.forEach(function(n){par[n.id]=n.id});
+  function find(x){while(par[x]!==x){par[x]=par[par[x]];x=par[x]}return x}
+  E.forEach(function(e){par[find(e[0])]=find(e[1])});
+  var connected=N.every(function(n){return find(n.id)===find(N[0].id)});
+  function cyclePath(){
+    if(!cycles.length)return '';
+    var g=cycles[0],start=g[0],cur=start,path=[start],seen={};seen[start]=1;
+    for(var k=0;k<g.length+1;k++){
+      var nx=null;
+      for(var i=0;i<E.length;i++){
+        var e=E[i];
+        if(e[0]===cur&&comp[e[1]]===comp[start]&&(e[1]===start||!seen[e[1]])){nx=e[1];if(e[1]===start)break}
+      }
+      if(nx===null)break;path.push(nx);if(nx===start)break;seen[nx]=1;cur=nx;
+    }
+    return path.map(function(x){return by[x].name}).join(' → ');
+  }
+  function deg(id){return {i:E.filter(function(e){return e[1]===id}).length,o:E.filter(function(e){return e[0]===id}).length}}
+
+  /* ----- chips de propiedades ----- */
+  $('gstats').innerHTML='';
+  [
+    '|V| = '+N.length+' vértices','|E| = '+E.length+' aristas','Grafo dirigido',
+    connected?'Conexo':'No conexo',
+    cycles.length+(cycles.length===1?' ciclo':' ciclos')
+  ].forEach(function(t){var li=document.createElement('li');li.className='chip';li.textContent=t;$('gstats').appendChild(li)});
+
+  /* ----- dibujo ----- */
+  var mode=null,pos={},sel=null,hover=null,cycOn=false,drag=null,gE=[],gN={};
+  function el(tag,attrs,parent){var e=document.createElementNS(NS,tag);for(var k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e}
+  var defs=el('defs',{},svg);
+  var ga=el('radialGradient',{id:'gradA',cx:'35%',cy:'28%',r:'80%'},defs);
+  el('stop',{offset:0,style:'stop-color:#FFFFFF'},ga);el('stop',{offset:1,style:'stop-color:#D3E3F6'},ga);
+  var gb=el('radialGradient',{id:'gradB',cx:'35%',cy:'28%',r:'85%'},defs);
+  el('stop',{offset:0,style:'stop-color:#3A74C9'},gb);el('stop',{offset:.55,style:'stop-color:#1A4B91'},gb);el('stop',{offset:1,style:'stop-color:#03224F'},gb);
+  var fs=el('filter',{id:'gshadow',x:'-30%',y:'-30%',width:'160%',height:'170%'},defs);
+  el('feDropShadow',{dx:0,dy:5,stdDeviation:3.5,'flood-color':'#03224F','flood-opacity':.38},fs);
+  var gEdges=el('g',{},svg),gNodes=el('g',{},svg);
+  E.forEach(function(e,i){
+    var g=el('g',{'class':'gedge'+(cycEdge[i]?' cyc':'')},gEdges);
+    gE.push({g:g,ln:el('line',{'class':'ln','stroke-linecap':'round'},g),hd:el('polygon',{'class':'hd'},g)});
+  });
+  N.forEach(function(n){
+    var g=el('g',{'class':'gnode '+n.t+(inCyc[n.id]?' incyc':''),tabindex:0,role:'button','aria-pressed':'false','aria-label':'Nodo '+n.id+': '+n.name},gNodes);
+    el('circle',{'class':'ring',r:R+7},g);
+    el('circle',{'class':'body',r:R},g);
+    el('ellipse',{'class':'shine',cx:-8,cy:-13,rx:12,ry:7,transform:'rotate(-25 -8 -13)'},g);
+    var ic=el('g',{'class':'ico'},g),u=el('use',{x:-12,y:-12,width:24,height:24},ic);u.setAttribute('href','#i-'+n.ic);
+    el('circle',{'class':'num',cx:19,cy:-19,r:9},g);
+    var nt=el('text',{'class':'numt',x:19,y:-15.5},g);nt.textContent=n.id;
+    var lb=el('text',{'class':'lbl',x:0,y:0},g);lb.textContent=n.sh;
+    gN[n.id]={g:g,lbl:lb};
+    g.addEventListener('pointerdown',function(ev){
+      if(ev.button>0)return;
+      drag={id:n.id,sx:ev.clientX,sy:ev.clientY,moved:false};
+      try{g.setPointerCapture(ev.pointerId)}catch(x){}
+    });
+    g.addEventListener('pointermove',function(ev){
+      if(!drag||drag.id!==n.id)return;
+      if(!drag.moved&&Math.hypot(ev.clientX-drag.sx,ev.clientY-drag.sy)>5){drag.moved=true;g.classList.add('drag')}
+      if(drag.moved){
+        var pt=svg.createSVGPoint();pt.x=ev.clientX;pt.y=ev.clientY;
+        var q=pt.matrixTransform(svg.getScreenCTM().inverse()),L=LAY[mode],m=R+12;
+        pos[n.id]=[Math.max(m,Math.min(L.w-m,q.x)),Math.max(m,Math.min(L.h-m,q.y))];
+        draw();
+      }
+    });
+    function end(ev){
+      if(!drag||drag.id!==n.id)return;
+      g.classList.remove('drag');
+      var was=drag.moved;drag=null;
+      try{g.releasePointerCapture(ev.pointerId)}catch(x){}
+      if(!was)choose(n.id);
+    }
+    g.addEventListener('pointerup',end);
+    g.addEventListener('pointercancel',function(){drag=null;g.classList.remove('drag')});
+    g.addEventListener('pointerenter',function(ev){if(ev.pointerType==='mouse'){hover=n.id;apply()}});
+    g.addEventListener('pointerleave',function(ev){if(ev.pointerType==='mouse'){hover=null;apply()}});
+    g.addEventListener('keydown',function(ev){
+      if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();choose(n.id)}
+      else if(ev.key==='Escape'){choose(null,true)}
+    });
+  });
+  svg.addEventListener('click',function(ev){if(!ev.target.closest||!ev.target.closest('.gnode'))choose(null,true)});
+
+  function draw(){
+    var P=pos;
+    E.forEach(function(e,i){
+      var a=P[e[0]],b=P[e[1]],dx=b[0]-a[0],dy=b[1]-a[1],len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len,
+          sx=a[0]+ux*(R+4),sy=a[1]+uy*(R+4),tx=b[0]-ux*(R+5),ty=b[1]-uy*(R+5),
+          bx=tx-ux*11,by2=ty-uy*11,px=-uy*5.5,py=ux*5.5;
+      gE[i].ln.setAttribute('x1',sx);gE[i].ln.setAttribute('y1',sy);
+      gE[i].ln.setAttribute('x2',bx);gE[i].ln.setAttribute('y2',by2);
+      gE[i].hd.setAttribute('points',tx+','+ty+' '+(bx+px)+','+(by2+py)+' '+(bx-px)+','+(by2-py));
+    });
+    N.forEach(function(n){
+      var p=P[n.id],o=gN[n.id];
+      o.g.setAttribute('transform','translate('+p[0]+' '+p[1]+')');
+      /* la etiqueta va del lado donde menos estorban las aristas */
+      var down=0,up=0;
+      E.forEach(function(e){
+        var o2=e[0]===n.id?e[1]:(e[1]===n.id?e[0]:null);if(o2===null)return;
+        var q=P[o2],dx=q[0]-p[0],dy=q[1]-p[1],l=Math.hypot(dx,dy)||1,c=dy/l;
+        if(c>0)down=Math.max(down,c);else up=Math.max(up,-c);
+      });
+      var ov=(LAY[mode].lab||{})[n.id],above=ov!==undefined?ov<0:down>up;
+      o.lbl.setAttribute('y',above?-(R+12):(R+19));
+    });
+  }
+
+  /* ----- selección y resaltado ----- */
+  function nbrs(id){var o={},i2={};E.forEach(function(e){if(e[0]===id)o[e[1]]=1;if(e[1]===id)i2[e[0]]=1});return {o:o,i:i2}}
+  function apply(){
+    var f=sel!==null?sel:hover,nb=f!==null?nbrs(f):null;
+    svg.classList.toggle('dim',f!==null);
+    svg.classList.toggle('cyc-on',cycOn);
+    N.forEach(function(n){
+      var c=gN[n.id].g.classList;
+      c.toggle('sel',f===n.id);
+      c.toggle('nb',!!(nb&&(nb.o[n.id]||nb.i[n.id])));
+      c.toggle('cyc-hi',cycOn);
+      gN[n.id].g.setAttribute('aria-pressed',sel===n.id?'true':'false');
+    });
+    E.forEach(function(e,i){
+      gE[i].g.classList.toggle('hi',f!==null&&(e[0]===f||e[1]===f));
+      gE[i].g.classList.toggle('cyc-hi',cycOn);
+    });
+    btnC.setAttribute('aria-pressed',cycOn?'true':'false');
+    renderMatrixHl();
+  }
+  function choose(id,clear){
+    sel=(clear||id===null||sel===id)?null:id;
+    if(sel!==null)cycOn=false;
+    apply();renderPanel();
+  }
+  btnC.addEventListener('click',function(){cycOn=!cycOn;if(cycOn)sel=null;apply();renderPanel()});
+  btnR.addEventListener('click',function(){setLayout(mode,true)});
+
+  /* ----- panel de información ----- */
+  function h(tag,cls,txt){var e=document.createElement(tag);if(cls)e.className=cls;if(txt!==undefined)e.textContent=txt;return e}
+  function relGroup(title,items,dirOut){
+    var d=h('div','rels');d.appendChild(h('h4','',title));
+    if(!items.length){d.appendChild(h('span','none','Ninguna'));return d}
+    items.forEach(function(e){
+      var other=by[dirOut?e[1]:e[0]],b=h('button','rel');b.type='button';
+      b.appendChild(h('span','',other.id+' · '+other.name));
+      b.appendChild(h('span','tag',e[2]));
+      b.addEventListener('click',function(){choose(other.id)});
+      d.appendChild(b);
+    });
+    return d;
+  }
+  function renderPanel(){
+    panel.innerHTML='';
+    if(sel!==null){
+      var n=by[sel],dg=deg(sel);
+      panel.appendChild(h('span','step',n.t==='a'?'Concepto':'Aplicación en Anki'));
+      panel.appendChild(h('h3','',n.id+' · '+n.name));
+      panel.appendChild(h('p','',n.d));
+      var c=h('div','pchips');
+      c.appendChild(h('span','pchip','Grado de entrada: '+dg.i));
+      c.appendChild(h('span','pchip','Grado de salida: '+dg.o));
+      if(inCyc[sel])c.appendChild(h('span','pchip','Forma parte del ciclo'));
+      panel.appendChild(c);
+      var rg=h('div','relgrid');
+      rg.appendChild(relGroup('Recibe de',E.filter(function(e){return e[1]===sel}),false));
+      rg.appendChild(relGroup('Conduce a',E.filter(function(e){return e[0]===sel}),true));
+      panel.appendChild(rg);
+    }else if(cycOn&&cycles.length){
+      panel.appendChild(h('span','step','Ciclo de retroalimentación'));
+      panel.appendChild(h('h3','',cycles[0].length+' nodos conectados en círculo'));
+      panel.appendChild(h('p','',cyclePath()));
+      panel.appendChild(h('p','','Desde cualquiera de ellos se puede llegar a los demás siguiendo las flechas, así que lo que ocurre en un nodo repercute en el resto.'));
+    }else{
+      panel.appendChild(h('span','step','Grafo dirigido'));
+      panel.appendChild(h('h3','','Selecciona un nodo'));
+      panel.appendChild(h('p','','Toca un nodo para ver con qué se conecta y cuántas relaciones entran y salen de él. Puedes arrastrarlo para reacomodar el grafo.'));
+    }
+    panel.classList.remove('swap');void panel.offsetWidth;panel.classList.add('swap');
+  }
+
+  /* ----- matriz de adyacencia ----- */
+  var M={};
+  (function(){
+    var adj={};E.forEach(function(e){adj[e[0]+'-'+e[1]]=1});
+    var t=h('table','mx'),cap=document.createElement('caption');cap.className='mx-cap';cap.textContent='Fila = origen · Columna = destino';
+    t.appendChild(cap);
+    var hr=h('tr'),corner=h('th','','');hr.appendChild(corner);
+    N.forEach(function(n){var th=h('th','',n.id);th.scope='col';M['c'+n.id]=[th];hr.appendChild(th)});
+    t.appendChild(hr);
+    N.forEach(function(a){
+      var tr=h('tr'),th=h('th','',a.id);th.scope='row';M['r'+a.id]=[th];tr.appendChild(th);
+      N.forEach(function(b){
+        var td=h('td',adj[a.id+'-'+b.id]?'on':'',adj[a.id+'-'+b.id]?'1':'·');
+        M['r'+a.id].push(td);M['c'+b.id].push(td);tr.appendChild(td);
+      });
+      t.appendChild(tr);
+    });
+    $('gmatrix').appendChild(t);
+    N.forEach(function(n){var li=h('li');li.appendChild(h('b','',n.id));li.appendChild(document.createTextNode(n.name));$('gnames').appendChild(li)});
+  })();
+  function renderMatrixHl(){
+    N.forEach(function(n){
+      M['r'+n.id].forEach(function(x){x.classList.toggle('rw',sel===n.id)});
+      M['c'+n.id].forEach(function(x){x.classList.toggle('cl',sel===n.id)});
+    });
+  }
+
+  /* ----- diseño según el ancho disponible ----- */
+  function setLayout(m,force){
+    if(m===mode&&!force)return;
+    mode=m;var L=LAY[m];
+    svg.setAttribute('viewBox','0 0 '+L.w+' '+L.h);
+    pos={};N.forEach(function(n){pos[n.id]=L.p[n.id].slice()});
+    draw();
+  }
+  function want(){return (box.clientWidth||800)<560?'narrow':'wide'}
+  setLayout(want());apply();renderPanel();
+  if(window.ResizeObserver){new ResizeObserver(function(){setLayout(want())}).observe(box)}
+  else window.addEventListener('resize',function(){setLayout(want())});
+})();
+
+(function(){
+  var p=document.querySelector('.phone');if(!p)return;
+  p.addEventListener('click',function(){p.classList.remove('spin');void p.getBoundingClientRect();p.classList.add('spin')});
+  p.addEventListener('animationend',function(e){if(e.animationName==='spinstar')p.classList.remove('spin')});
+})();
+/* desfasa el giro de cada ícono para que no giren todos sincronizados */
+(function(){var els=[].slice.call(document.querySelectorAll('.pill svg,.hero-info .ib,.in-panel .ib')),STEP=220,st=new Map(),ticking=false;
+function go(el){el.classList.remove('flip');void el.getBoundingClientRect();el.classList.add('flip')}
+els.forEach(function(el){el.addEventListener('animationend',function(){el.classList.remove('flip')})});
+function check(){ticking=false;var y=window.pageYOffset,vh=window.innerHeight;els.forEach(function(el){var r=el.getBoundingClientRect(),vis=r.bottom>0&&r.top<vh*0.92,s=st.get(el);
+if(vis){if(s===undefined){go(el);st.set(el,1)}}})}
+window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(check)}},{passive:true});
+window.addEventListener('resize',check);setTimeout(check,400)})();
+
+(function(){
+  var box=document.getElementById('video'),a=document.getElementById('vthumb'),note=document.getElementById('vnote'),
+      ID='WF4PxqT45sQ',player=null,ready=false,timer=null;
+  /* Dentro de Google Sites u otro iframe, YouTube no recibe la dirección de la página y muestra el Error 153.
+     Ahí (y al abrir el archivo suelto) la miniatura abre YouTube directamente. En la página publicada se reproduce aquí. */
+  var canInline=/^https?:$/.test(location.protocol)&&window.top===window;
+  if(!canInline)return;
+  function restore(msg){
+    clearTimeout(timer);
+    try{if(player&&player.destroy)player.destroy()}catch(x){}
+    player=null;ready=false;
+    var d=document.getElementById('vplayer');if(d&&d.parentNode)d.parentNode.removeChild(d);
+    a.hidden=false;note.hidden=false;note.textContent=msg;
+  }
+  var FAIL='No se pudo reproducir el video dentro de la página. Ábrelo en YouTube con el botón de abajo.';
+  function mount(){
+    a.hidden=true;note.hidden=true;
+    var d=document.createElement('div');d.id='vplayer';box.appendChild(d);
+    player=new YT.Player('vplayer',{
+      videoId:ID,
+      playerVars:{autoplay:1,rel:0,playsinline:1,origin:location.origin},
+      events:{onReady:function(e){ready=true;clearTimeout(timer);e.target.playVideo()},onError:function(){restore(FAIL)}}
+    });
+    timer=setTimeout(function(){if(!ready)restore(FAIL)},9000);
+  }
+  a.addEventListener('click',function(e){
+    e.preventDefault();
+    if(window.YT&&YT.Player){mount();return}
+    window.onYouTubeIframeAPIReady=mount;
+    var s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';
+    s.onerror=function(){restore(FAIL)};document.head.appendChild(s);
+    timer=setTimeout(function(){if(!ready&&!player)restore(FAIL)},9000);
+  });
+})();
+</script>
+<button class="totop" id="totop" type="button" aria-label="Volver arriba" title="Volver arriba"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg></button>
+<script>(function(){var b=document.getElementById('totop');function t(){b.classList.toggle('show',(window.pageYOffset||document.documentElement.scrollTop)>500)}window.addEventListener('scroll',t,{passive:true});t();b.addEventListener('click',function(){window.scrollTo({top:0})})})();</script>
+<footer class="sn-foot"><p>Tania Karina Alemán Díaz</p></footer>
+<script src="site.js" defer></script>
+</body>
+</html>
