@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portafoliodigital.pages.dev/sitemap.xml
